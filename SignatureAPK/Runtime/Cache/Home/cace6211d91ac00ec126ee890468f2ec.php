@@ -10,7 +10,8 @@
 <body>
 <h1>Account Login</h1>
 <div>
-   <form  action = "login.php" method="post">
+
+   <form  action = /SignatureAPK/index.php/Home/Start/start method="post">
      <table>
 	    <tr>
 			<td>uername &nbsp:</td>
