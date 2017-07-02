@@ -15,7 +15,7 @@
      <table>
 	    <tr>
 			<td>uername &nbsp:</td>
-			<td><input type="text" name="user"></td>
+			<td><input type="text" name="uername"></td>
 		</tr>
         <tr> 
 		    <td>password :</td>
