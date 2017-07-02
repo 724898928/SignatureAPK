@@ -3,6 +3,7 @@ namespace Home\Controller;
 
 use Think\Controller;
 use Think\Model;
+use Think\Verify;
 
 class StartController extends Controller
 {
@@ -45,5 +46,10 @@ companyname varchar(50)
             dump(!$result);
           //  $this->display();
         }
+    }
+    
+    function check_verify($code,$id='') {
+        $verify=new Verify();
+        return $verify->check($code,$id);
     }
 }
