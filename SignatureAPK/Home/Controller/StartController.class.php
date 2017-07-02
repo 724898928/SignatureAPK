@@ -47,7 +47,11 @@ companyname varchar(50)
           //  $this->display();
         }
     }
-    
+    /*  
+     * 验证验证码是否正确
+     * @param string $code 为用户输入的字符串
+     * @param string $id 验证码标识 
+     * */
     function check_verify($code,$id='') {
         $verify=new Verify();
         return $verify->check($code,$id);

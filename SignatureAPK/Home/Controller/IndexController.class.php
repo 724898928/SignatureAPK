@@ -5,8 +5,8 @@ use Think\Verify;
 class IndexController extends Controller {
     
 	public function index(){
-	    $name="李欣";
-	    $this->assign("data",$name);
+	   // $name="李欣";
+	 //   $this->assign("data",$name);
 	    
 	   
 	  //  $data['verify']=$Verify;
@@ -19,7 +19,8 @@ class IndexController extends Controller {
 	         'length' => 4,//验证码位数
 	         'imageH'=>40,//验证码高度
 	         'imageW'=>150,//验证码宽度
-	         //'useNoise'=>false,
+	         //'useImgBg'=>false,// 开启验证码背景图片功能
+	         'useNoise'=>false,// 关闭验证码杂点
 	     );
 	     $Verify=new Verify($config);
 	     $Verify->entry();

@@ -12,7 +12,7 @@
 	<body>
 		<h1>Account Login</h1>
 		<div>
-			<h1>hellow <?php echo ($data); ?></h1>
+		
 			<form action='/SignatureAPK/index.php/Home/Start/start' method='post' name="myform">
 				<table>
 					<tr>
@@ -31,7 +31,7 @@
 						</td>
 					</tr>
 				</table>
-				<img src='/SignatureAPK/Public/Img/login.gif' onclick='sub()' />
+				<img src='/SignatureAPK/Public/Img/login.png' onclick='sub()' />
 			</form>
 		</div>
 	</body>
