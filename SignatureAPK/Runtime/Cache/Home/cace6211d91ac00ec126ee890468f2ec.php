@@ -16,18 +16,18 @@
 			<form action='/SignatureAPK/index.php/Home/Start/start' method='post' name="myform">
 				<table>
 					<tr>
-						<td>User name&nbsp:</td>
+						<td>User name  :</td>
 						<td><input type="text" name="username" /></td>
 					</tr>
 					<tr>
-						<td>Pass word :</td>
+						<td>Pass word  :</td>
 						<td><input type="password" name="password" /></td>
 					</tr>
 					<tr>
-						<td>Verification code:</td>
-						<td><input type='text' name='code'/>
+						<td>Verify code:</td>
+						<td><input  type='text' name='code'/>
 						    <img  src='/SignatureAPK/index.php/Home/Index/Verify' onclick="this.src=this.src+'?'
-						    		+Math.random()"/>
+						    		+Math.random()" alt="点击图片切换"/>
 						</td>
 					</tr>
 				</table>

@@ -17,8 +17,8 @@ class IndexController extends Controller {
 	     $config = array(
 	         'fontSize'=> 20,//验证字体大小
 	         'length' => 4,//验证码位数
-	         'imageH'=>30,//验证码高度
-	         'imageW'=>110,//验证码宽度
+	         'imageH'=>40,//验证码高度
+	         'imageW'=>150,//验证码宽度
 	         //'useNoise'=>false,
 	     );
 	     $Verify=new Verify($config);
