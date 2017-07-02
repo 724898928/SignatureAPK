@@ -4,6 +4,6 @@
   $user = "root";
   $password = "";
   $dbname="config";
- 
+  
 
 ?>

@@ -1,0 +1,45 @@
+[ 2017-07-02T17:46:31+08:00 ] ::1 /SignatureAPK/index.php/%22/SignatureAPK/index.php/Home/Index/Verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001120s ]
+ERR: 无法加载控制器:SignatureAPK
+
+[ 2017-07-02T17:46:32+08:00 ] ::1 /SignatureAPK/index.php/%22/SignatureAPK/index.php/Home/Index/Verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+ERR: 无法加载控制器:SignatureAPK
+
+[ 2017-07-02T17:46:32+08:00 ] ::1 /SignatureAPK/index.php/%22/SignatureAPK/index.php/Home/Index/Verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001400s ]
+ERR: 无法加载控制器:SignatureAPK
+
+[ 2017-07-02T17:46:32+08:00 ] ::1 /SignatureAPK/index.php/%22/SignatureAPK/index.php/Home/Index/Verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001056s ]
+ERR: 无法加载控制器:SignatureAPK
+
+[ 2017-07-02T17:46:33+08:00 ] ::1 /SignatureAPK/index.php/%22/SignatureAPK/index.php/Home/Index/Verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001449s ]
+ERR: 无法加载控制器:SignatureAPK
+

@@ -1,37 +1,39 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
-   <title>Signature Server
-   </title>
-</head>
-<script language="javascript" type= "text/javascript">
+<title>Signature Server</title>
+<link rel='stylesheet' type='text/css' href='/SignatureAPK/Public/Css/basic.css'/>
+<script src='/SignatureAPK/Public/Js/basic.js'>
+	
 </script>
-<center>
-<body>
-<h1>Account Login</h1>
-<div>
 
-   <form  action = /SignatureAPK/index.php/Home/Start/start method="post">
-     <table>
-	    <tr>
-			<td>uername &nbsp:</td>
-			<td><input type="text" name="uername"></td>
-		</tr>
-        <tr> 
-		    <td>password :</td>
-			<td><input type="password" name="password"></td>
-		</tr>
-	 </table>
-	<table>
-		<tr>
-			<td><input type="submit" name = "landing" value="landing"> </td>
-			<td></td>
-			
-		</tr>
-			
-	 </table>
-   </form>
-</div>
-</body>
+</head>
+<center>
+	<body>
+		<h1>Account Login</h1>
+		<div>
+			<h1>hellow <?php echo ($data); ?></h1>
+			<form action='/SignatureAPK/index.php/Home/Start/start' method='post' name="myform">
+				<table>
+					<tr>
+						<td>User name&nbsp:</td>
+						<td><input type="text" name="username" /></td>
+					</tr>
+					<tr>
+						<td>Pass word :</td>
+						<td><input type="password" name="password" /></td>
+					</tr>
+					<tr>
+						<td>Verification code:</td>
+						<td><input type='text' name='code'/>
+						    <img  src='/SignatureAPK/index.php/Home/Index/Verify' onclick="this.src=this.src+'?'
+						    		+Math.random()"/>
+						</td>
+					</tr>
+				</table>
+				<img src='/SignatureAPK/Public/Img/login.gif' onclick='sub()' />
+			</form>
+		</div>
+	</body>
 </center>
 </html>

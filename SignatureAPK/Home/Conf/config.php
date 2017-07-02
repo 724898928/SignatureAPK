@@ -17,4 +17,8 @@ return array(
     'DB_CHARSET'            =>  'utf8',      // 数据库编码默认采用utf8
     
     'DEFAULT_CHARSET'       =>  'utf-8', // 默认输出编码
+    
+    'TMPL_CACHE_ON'   => false,  // 默认开启模板编译缓存 false 的话每次都重新编译模板
+    'ACTION_CACHE_ON'  => false,  // 默认关闭Action 缓存
+    'HTML_CACHE_ON'   => false,   // 默认关闭静态缓存
 );

@@ -36,14 +36,14 @@ companyname varchar(50)
         $result = $User->where('uername =' . $data['name'])->find();
         
         echo $result . "<br>";
-        dump($result);
+        dump(!$result);
         echo $data['name'] . "<br>" . $data['password'];
         if (!$result) {
             $index = new IndexController();
             echo $index->index();
         }else{
-            dump($result);
-            $this->display();
+            dump(!$result);
+          //  $this->display();
         }
     }
 }
