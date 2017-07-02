@@ -31,29 +31,41 @@ firstname varchar(50),
 lastname varchar(50),
 companyname varchar(50)
 )";
-        $data['name'] = $_POST['uername'];
+        $this->display();
+    }
+
+    /*
+     * 验证用户信息
+     * @param
+     *
+     */
+    function check_username()
+    {
+        $data['name'] = $_POST['username'];
         $data['password'] = $_POST['password'];
         $User = new Model($dbname);
-        $result = $User->where('uername =' . $data['name'])->find();
+        $result = $User->where('username =' . $data['name'])->find();
         
         echo $result . "<br>";
-        dump(!$result);
+        dump(! $result);
         echo $data['name'] . "<br>" . $data['password'];
-        if (!$result) {
+        if ($result) {
+            dump(! $result);
+            $this->start();
+        } else {
             $index = new IndexController();
             echo $index->index();
-        }else{
-            dump(!$result);
-          //  $this->display();
         }
     }
-    /*  
+
+    /*
      * 验证验证码是否正确
      * @param string $code 为用户输入的字符串
-     * @param string $id 验证码标识 
-     * */
-    function check_verify($code,$id='') {
-        $verify=new Verify();
-        return $verify->check($code,$id);
+     * @param string $id 验证码标识
+     */
+    function checkverify($code, $id = '')
+    {
+        $verify = new Verify();
+        return $verify->check($code, $id);
     }
 }

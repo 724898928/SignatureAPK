@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
    <title>registered</title>
@@ -36,8 +36,8 @@
 	 </table>
 	<table>
 		<tr>
-			<td><img src='__PUBLIC__/Img/reset.jpg' name = "reset"/> &nbsp&nbsp&nbsp&nbsp</td>
-			<td>&nbsp&nbsp&nbsp&nbsp<img src='__PUBLIC__/Img/submit.jpg' name = "submit"/> </td>
+			<td><img src='/SignatureAPK/Public/Img/reset.jpg' name = "reset"/> &nbsp&nbsp&nbsp&nbsp</td>
+			<td>&nbsp&nbsp&nbsp&nbsp<img src='/SignatureAPK/Public/Img/submit.jpg' name = "submit"/> </td>
 	    </tr>
 			
 	 </table>
