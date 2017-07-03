@@ -24,7 +24,7 @@ class IndexController extends Controller {
 	         'useNoise'=>false,// 关闭验证码杂点
 	     );
 	     $Verify=new Verify($config);
-	     $Verify->entry();
+	     $Verify->entry(1);
 	 }
 	 
 }

@@ -31,7 +31,13 @@ firstname varchar(50),
 lastname varchar(50),
 companyname varchar(50)
 )";
-        $this->display();
+      //  echo $this->check_username();
+        if($this->check_username()){
+            $this->display();
+        }else{
+         //   $this->redirect('Index/index');
+        }
+       
     }
 
     /*
@@ -39,31 +45,34 @@ companyname varchar(50)
      * @param
      *
      */
-    function check_username()
+    function  check_username()
     {
-        $data['name'] = $_POST['username'];
-        $data['password'] = $_POST['password'];
-        $User = new Model($dbname);
-        $result = $User->where('username =' . $data['name'])->find();
         
-        echo $result . "<br>";
-        dump(! $result);
-        echo $data['name'] . "<br>" . $data['password'];
-        if ($result) {
-            dump(! $result);
-            $this->start();
-        } else {
-            $index = new IndexController();
-            echo $index->index();
+        $name = $_POST['username'];
+        $password = $_POST['password'];
+        $code = $_POST['code'];
+       
+        if ($this->checkverify($code,'')){
+            $this->error("验证码错误！");
         }
+        
+        $User=M('config');
+        $re=$User->where($where)->find();
+        dump($re);
+       $i=$User->where($where)->count();
+       if($i>0){
+           $this->redirect('Start/start');
+       }else{
+           $this->error("用户不存在！");
+       }
     }
 
     /*
      * 验证验证码是否正确
      * @param string $code 为用户输入的字符串
-     * @param string $id 验证码标识
+     * @param string $id 验证码标识 与 Index->Verify()->entry(1);中的“1”对应
      */
-    function checkverify($code, $id = '')
+    function checkverify($code, $id = '1')
     {
         $verify = new Verify();
         return $verify->check($code, $id);
