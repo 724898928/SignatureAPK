@@ -31,13 +31,12 @@ firstname varchar(50),
 lastname varchar(50),
 companyname varchar(50)
 )";
-      //  echo $this->check_username();
-        if($this->check_username()){
+        // echo $this->check_username();
+        if ($this->check_username()) {
             $this->display();
-        }else{
-         //   $this->redirect('Index/index');
+        } else {
+           // $this->error("用户不存在！");
         }
-       
     }
 
     /*
@@ -45,26 +44,27 @@ companyname varchar(50)
      * @param
      *
      */
-    function  check_username()
+    function check_username()
     {
-        
         $name = $_POST['username'];
         $password = $_POST['password'];
         $code = $_POST['code'];
-       
-        if ($this->checkverify($code,'')){
+        
+        if ($this->checkverify($code, '')) {
             $this->error("验证码错误！");
         }
-        
-        $User=M('config');
-        $re=$User->where($where)->find();
-        dump($re);
-       $i=$User->where($where)->count();
-       if($i>0){
-           $this->redirect('Start/start');
-       }else{
-           $this->error("用户不存在！");
-       }
+        dump($name);
+        dump($password);
+        $User = M('userinf');
+       // $re = $User->where('username='.$name)->select();
+        //dump($re);
+        $i = $User->where('username="'.$name.'" and passwd="'.$password.'"')->count();
+        dump($i);
+        if ($i>0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     /*
