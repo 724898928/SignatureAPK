@@ -35,7 +35,7 @@ companyname varchar(50)
         if ($this->check_username()) {
             $this->display();
         } else {
-           // $this->error("用户不存在！");
+            $this->error("用户不存在！");
         }
     }
 
@@ -53,8 +53,8 @@ companyname varchar(50)
         if ($this->checkverify($code, '')) {
             $this->error("验证码错误！");
         }
-        dump($name);
-        dump($password);
+       // dump($name);
+     //   dump($password);
         $User = M('userinf');
        // $re = $User->where('username='.$name)->select();
         //dump($re);
