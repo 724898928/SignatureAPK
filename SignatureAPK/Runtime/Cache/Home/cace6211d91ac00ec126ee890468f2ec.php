@@ -1,6 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
 <title>Signature Server</title>
 <link rel='stylesheet' type='text/css' href='/SignatureAPK/Public/Css/basic.css' />
 <script src='/SignatureAPK/Public/Js/basic.js'>

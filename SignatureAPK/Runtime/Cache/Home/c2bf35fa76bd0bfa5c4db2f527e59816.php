@@ -1,31 +1,20 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
+   <title>SignatureAPK</title>
  <meta charset="utf-8">
-   <title>SignatureAPK
-   </title>
- <meta charset="utf-8">
-<script>
-function myFunction(){
-   // alert("uplandfile");
-    var uplandfile =  Document.ElementByName("uplandfile").name;
-	alert(""+uplandfile);
-}
-
-function insertTitle(path){  
-  alert(path);
-   var path = path;
- 
-}
+<script src='/SignatureAPK/Public/Js/basic.js'>
 </script>
 </head>
+
 <center>
 
 <body>
 <h1>SignatureAPK</h1>
+
 <div>
-  <table>
-   <form action="pushtoserver.php" enctype="multipart/form-data" method= "post" >
+  <table >
+   <form name="pushtoserver"  action='/SignatureAPK/index.php/Home/Start/pushtoserver' method= "post" >
 		   <tr>
 			      <td><input type = "file" name= "uplandfile"></td>
 			      <td>Select the APK to be signed</td>
@@ -35,11 +24,11 @@ function insertTitle(path){
 			      <td>Select the keystore to be signed</td>
 		   </tr>
 			<tr>
-				<td><button type = "submit" name= "ApkAndKeysubmit">PushApkAndKeystore</button></td>
-                <td></td>
+				<td></td>
+                <td><img src='/SignatureAPK/Public/Img/register.png' onclick='PushApkKey()'/></td>
             </tr>
  </form>
- <form action= "start.php" enctype="multipart/form-data" method= "post">
+ <form action='/SignatureAPK/index.php/Home/Start/startSignature' name='startSignature' enctype="multipart/form-data" method= "post">
 		   <tr>
 			      <td><input type = "text" name= "keystorepass" value="<?php include('queryvalue.php'); if(empty($rekey)){}else{echo $rekey;} @mysql_close($conn);?>" ></td>
 			      <td>keystorePassword</td>
@@ -49,7 +38,7 @@ function insertTitle(path){
 			      <td>AliasNameOfApk</td>
 		   </tr>
 		   <tr>
-			      <td><input type = "submit" name= "signatureapk" value= "stratSignatureAPK">
+			      <td><button onclick='startSignature()' name= "signatureapk" >stratSignatureAPK</button>
 			      <td><input type = "button" onclick = "window.location='downloadapk.php'"  name= "downloadapk" value= "DownloadSignatureAPK"></td>
 		   </tr>
 		</form>
