@@ -6,10 +6,8 @@ class IndexController extends Controller {
     
 	public function index(){
 	   // $name="李欣";
-	 //   $this->assign("data",$name);
-	    
-	   
-	  //  $data['verify']=$Verify;
+	   //  $this->assign("data",$name);
+	   //  $data['verify']=$Verify;
        // $this->assign('$data',$data);
      	$this->display();
 	 }
@@ -23,7 +21,7 @@ class IndexController extends Controller {
 	         //'useImgBg'=>false,// 开启验证码背景图片功能
 	         'useNoise'=>false,// 关闭验证码杂点
 	     );
-	     $Verify=new Verify($config);
+	     $Verify=new \Think\Verify($config);
 	     $Verify->entry(1);
 	 }
 	 

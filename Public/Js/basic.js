@@ -18,3 +18,40 @@ function sub() {
 			document.myform.submit();
 		}
 }
+
+function registerSub(){
+	// alert('ssssss');
+	var name=document.registered.email;
+	var firstname=document.registered.firstname;
+	var lastname=document.registered.lastname;
+	var username=document.registered.username;
+	var password=document.registered.password;
+	var companyname=document.registered.companyname;
+
+	if(name.value==""||	firstname.value==""||
+			lastname.value==""||username.value==""||
+			password.value==""||companyname.value==""
+	){
+		alert('Context can not be empty!');
+	}else{
+		document.registered.submit();
+	}
+	
+}
+
+function resetSub(){
+	 alert('reset');
+	 document.registered.reset();
+}
+
+function myFunction(){
+	   // alert("uplandfile");
+	    var uplandfile =  Document.ElementByName("uplandfile").name;
+		alert(""+uplandfile);
+	}
+
+	function insertTitle(path){  
+	  alert(path);
+	   var path = path;
+	 
+	}

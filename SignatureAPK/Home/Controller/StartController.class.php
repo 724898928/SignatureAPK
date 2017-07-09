@@ -11,7 +11,7 @@ class StartController extends Controller
     public function start()
     {
         $dbname = "config";
-        $table1 = "addinf";
+        $table1 = "addinf"; 
         $table2 = "userinf";
         $creatdb = "create database " . $dbname;
         $createtable1 = "CREATE TABLE addinf(
@@ -32,7 +32,7 @@ lastname varchar(50),
 companyname varchar(50)
 )";
         // echo $this->check_username();
-        if ($this->check_username()) {
+        if($this->check_username()){
             $this->display();
         } else {
             $this->error("用户不存在！");
@@ -76,5 +76,13 @@ companyname varchar(50)
     {
         $verify = new Verify();
         return $verify->check($code, $id);
+    }
+    
+    /*
+     * 执行签名
+     *
+     **/
+    private function  pushtoserver(){
+       
     }
 }

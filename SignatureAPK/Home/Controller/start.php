@@ -86,7 +86,6 @@ if(file_exists($filepath.$apkname) && file_exists($filepath.$keystore)){//判断
     include("register.html");
      } 
 	 include("start.html"); 
-
  @mysql_close($conn);
 
 ?>

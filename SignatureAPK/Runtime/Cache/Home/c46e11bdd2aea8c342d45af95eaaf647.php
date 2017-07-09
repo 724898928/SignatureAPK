@@ -1,10 +1,9 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
-   <meta charset="utf-8">
    <title>registered</title>
-   <link rel='stylesheet' type="text/css" href='__PUBLIC__/Css/basic.css'></link>
-<script src='__PUBLIC__/Js/basic.js'>
+   <link rel='stylesheet' type="text/css" href='/SignatureAPK/Public/Css/basic.css'></link>
+<script src='/SignatureAPK/Public/Js/basic.js'>
 </script>
 </head>
 
@@ -12,7 +11,7 @@
 <center>
    <h1>Account registered</h1>
    <div>
-   <form name ="registered" action = '__URL__/registeredJudge' method="post">
+   <form name ="registered" action = '/SignatureAPK/index.php/Home/Register/registeredJudge' method="post">
      <table>
 		<tr>
 			<td>E-mail address:</td>
@@ -39,9 +38,9 @@
 			<td><input type= "text" name= "companyname" value=""></td>
 		</tr>
 		<tr>
-			<td><img align="middle" src='__PUBLIC__/Img/reset.jpg'   onclick='resetSub()'/>
+			<td><img align="middle" src='/SignatureAPK/Public/Img/reset.jpg'   onclick='resetSub()'/>
 			 </td>
-			<td><img align="middle" src='__PUBLIC__/Img/submit.jpg'  onclick='registerSub()'/> 
+			<td><img align="middle" src='/SignatureAPK/Public/Img/submit.jpg'  onclick='registerSub()'/> 
 			</td>
 	    </tr>		
 	 </table>
