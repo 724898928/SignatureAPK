@@ -20,7 +20,7 @@
 			      <td>Select the APK to be signed</td>
 		   </tr>
 		   <tr>
-			      <td><input type = "file" name= "Pushkeystore"></td>
+			      <td><input type = "file" name= "Pushkeystore" onclick="getpass()"></td>
 			      <td>Select the keystore to be signed</td>
 		   </tr>
 			<tr>
@@ -30,11 +30,11 @@
  </form>
  <form action='/SignatureAPK/index.php/Home/Start/startSignature' name='startSignature' enctype="multipart/form-data" method= "post">
 		   <tr>
-			      <td><input type = "text" name= "keystorepass" value="<?php include('queryvalue.php'); if(empty($rekey)){}else{echo $rekey;} @mysql_close($conn);?>" ></td>
+			      <td><input type = "text" name= "keystorepass" ></td>
 			      <td>keystorePassword</td>
 		   </tr>
 		   <tr>
-			      <td><input type = "text" name= "aliasName" value= "<?php include('queryvalue.php'); if(empty($aliasn)){}else{echo $aliasn;} @mysql_close($conn);?>"></td>
+			      <td><input type = "text" name= "aliasName" ></td>
 			      <td>AliasNameOfApk</td>
 		   </tr>
 		   <tr>

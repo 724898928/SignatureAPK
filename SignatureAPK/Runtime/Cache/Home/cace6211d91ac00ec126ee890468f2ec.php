@@ -33,11 +33,12 @@
 							alt="点击图片切换" /></td>
 					</tr>
 					<tr>
-					  <td></td>
-					  <td><a href='/SignatureAPK/index.php/Home/Register/register'><img src='/SignatureAPK/Public/Img/register.png'/></a>&nbsp&nbsp&nbsp<img src='/SignatureAPK/Public/Img/login.png' 
-					   onclick='sub()' /></td>
+						<td></td>
+						<td><a href='/SignatureAPK/index.php/Home/Register/register'><img
+								src='/SignatureAPK/Public/Img/register.png' /></a>&nbsp&nbsp&nbsp<img
+							src='/SignatureAPK/Public/Img/login.png' onclick='sub()' /></td>
 					</tr>
-					</table>
+				</table>
 			</form>
 		</div>
 	</body>

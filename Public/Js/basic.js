@@ -63,3 +63,25 @@ function PushApkKey() {
 function startSignature(){
 	alert("startSignature()");
 }
+function getPasAlias(){
+	alert("getpass()");
+	var xmlhttp;
+	if(window.XMLHttpRequest){
+		//code for IE7+ ,FIREFOX , Chrome
+		xmlhttp = new XMLHttpRequest();
+	}else{
+		//code for IE 6
+		xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	
+	xmlhttp.onreadystatechange=function(){
+		if(xmlhttp.readyState==4 && xmlhttp.status==200){
+		document.getElementById("").innerHTML= xmlhttp.responseText;
+		}
+	}
+	xmlhttp.open("Post","#?"+Math.random(),true);
+	xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+	xmlhttp.send("");
+	
+}
+
