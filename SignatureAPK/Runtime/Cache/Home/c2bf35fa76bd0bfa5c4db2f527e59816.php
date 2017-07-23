@@ -20,7 +20,7 @@
 			      <td>Select the APK to be signed</td>
 		   </tr>
 		   <tr>
-			      <td><input type = "file" name= "Pushkeystore" onclick="getpass()"></td>
+			      <td><input type = "file" name= "Pushkeystore" id= "Pushkeystore" onkeyup="getPasAlias()"></td>
 			      <td>Select the keystore to be signed</td>
 		   </tr>
 			<tr>
@@ -30,11 +30,11 @@
  </form>
  <form action='/SignatureAPK/index.php/Home/Start/startSignature' name='startSignature' enctype="multipart/form-data" method= "post">
 		   <tr>
-			      <td><input type = "text" name= "keystorepass" ></td>
+			      <td><input type = "text" name= "keystorepass" id= "keystorepass" ></td>
 			      <td>keystorePassword</td>
 		   </tr>
 		   <tr>
-			      <td><input type = "text" name= "aliasName" ></td>
+			      <td><input type = "text" name= "aliasName" id= "aliasName" ></td>
 			      <td>AliasNameOfApk</td>
 		   </tr>
 		   <tr>

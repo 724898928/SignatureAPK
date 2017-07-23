@@ -64,7 +64,7 @@ function startSignature(){
 	alert("startSignature()");
 }
 function getPasAlias(){
-	alert("getpass()");
+	//alert("getpass()");
 	var xmlhttp;
 	if(window.XMLHttpRequest){
 		//code for IE7+ ,FIREFOX , Chrome
@@ -79,7 +79,9 @@ function getPasAlias(){
 		document.getElementById("").innerHTML= xmlhttp.responseText;
 		}
 	}
-	xmlhttp.open("Post","#?"+Math.random(),true);
+	var url ="";
+	var data="";
+	xmlhttp.open("Post",url,true);
 	xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 	xmlhttp.send("");
 	
